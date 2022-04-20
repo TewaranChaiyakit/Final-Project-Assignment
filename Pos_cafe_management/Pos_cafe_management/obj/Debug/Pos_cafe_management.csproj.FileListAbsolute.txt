@@ -1,0 +1,11 @@
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\bin\Debug\Pos_cafe_management.exe.config
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\bin\Debug\Pos_cafe_management.exe
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\bin\Debug\Pos_cafe_management.pdb
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\obj\Debug\Pos_cafe_management.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\obj\Debug\Pos_cafe_management.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\obj\Debug\Pos_cafe_management.Form1.resources
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\obj\Debug\Pos_cafe_management.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\obj\Debug\Pos_cafe_management.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\obj\Debug\Pos_cafe_management.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\obj\Debug\Pos_cafe_management.exe
+C:\Users\Admin\Documents\Visual Studio 2022\Pos_cafe_management\Pos_cafe_management\obj\Debug\Pos_cafe_management.pdb
