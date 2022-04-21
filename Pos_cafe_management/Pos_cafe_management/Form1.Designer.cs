@@ -56,6 +56,7 @@
             this.btEspresso = new System.Windows.Forms.Button();
             this.btCakechocolate = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btClose = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btRemoveItem = new System.Windows.Forms.Button();
             this.btClear = new System.Windows.Forms.Button();
@@ -79,7 +80,9 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.btClose = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -87,6 +90,7 @@
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -105,10 +109,10 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(11, 10);
+            this.panel1.Location = new System.Drawing.Point(11, 26);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(321, 477);
+            this.panel1.Size = new System.Drawing.Size(321, 461);
             this.panel1.TabIndex = 0;
             // 
             // btC
@@ -271,10 +275,10 @@
             this.panel2.Controls.Add(this.btAmericano);
             this.panel2.Controls.Add(this.btEspresso);
             this.panel2.Controls.Add(this.btCakechocolate);
-            this.panel2.Location = new System.Drawing.Point(888, 10);
+            this.panel2.Location = new System.Drawing.Point(888, 26);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(423, 477);
+            this.panel2.Size = new System.Drawing.Size(423, 461);
             this.panel2.TabIndex = 1;
             // 
             // btBingsu
@@ -422,6 +426,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1299, 182);
             this.panel3.TabIndex = 2;
+            // 
+            // btClose
+            // 
+            this.btClose.BackColor = System.Drawing.Color.Red;
+            this.btClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btClose.Location = new System.Drawing.Point(1210, 117);
+            this.btClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btClose.Name = "btClose";
+            this.btClose.Size = new System.Drawing.Size(82, 56);
+            this.btClose.TabIndex = 4;
+            this.btClose.Text = "Exit";
+            this.btClose.UseVisualStyleBackColor = false;
+            this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
             // panel6
             // 
@@ -622,12 +639,12 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(337, 15);
+            this.dataGridView1.Location = new System.Drawing.Point(337, 26);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(545, 473);
+            this.dataGridView1.Size = new System.Drawing.Size(545, 462);
             this.dataGridView1.TabIndex = 3;
             // 
             // Column1
@@ -666,18 +683,31 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // btClose
+            // menuStrip1
             // 
-            this.btClose.BackColor = System.Drawing.Color.Red;
-            this.btClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btClose.Location = new System.Drawing.Point(1210, 117);
-            this.btClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btClose.Name = "btClose";
-            this.btClose.Size = new System.Drawing.Size(82, 56);
-            this.btClose.TabIndex = 4;
-            this.btClose.Text = "Exit";
-            this.btClose.UseVisualStyleBackColor = false;
-            this.btClose.Click += new System.EventHandler(this.btClose_Click);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1327, 28);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -689,6 +719,8 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "POS";
@@ -702,7 +734,10 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -759,6 +794,9 @@
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.Button btC;
         private System.Windows.Forms.Button btClose;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
     }
 }
 
