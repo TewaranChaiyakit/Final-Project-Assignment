@@ -13,6 +13,7 @@ namespace Pos_cafe_management
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -113,7 +114,6 @@ namespace Pos_cafe_management
         {
             cboPayment.Items.Add("Cash");
             cboPayment.Items.Add("True wallet");
-            cboPayment.Items.Add("Master Card");
         }
 
         private void NumbersOnly(object sender, EventArgs e)
@@ -151,11 +151,14 @@ namespace Pos_cafe_management
             {
                 Change();
             }
-            else
+
+            if (cboPayment.Text == "True wallet")
             {
-                tbChange.Text = "";
-                tbCost.Text = "0";
+                Change();
+                
             }
+
+            
         }
 
         private void btRemoveItem_Click(object sender, EventArgs e)
@@ -394,6 +397,7 @@ namespace Pos_cafe_management
 
         private void btClose_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("System offline"+ "POS");
             this.Close();
         }
 

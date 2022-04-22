@@ -532,12 +532,14 @@
             // 
             // tbChange
             // 
+            this.tbChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.tbChange.Location = new System.Drawing.Point(171, 100);
             this.tbChange.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbChange.Multiline = true;
             this.tbChange.Name = "tbChange";
             this.tbChange.Size = new System.Drawing.Size(183, 32);
             this.tbChange.TabIndex = 6;
+            this.tbChange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tbCost
             // 
@@ -596,6 +598,7 @@
             // 
             // tbTotal
             // 
+            this.tbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.tbTotal.Location = new System.Drawing.Point(101, 50);
             this.tbTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTotal.Multiline = true;
@@ -605,6 +608,7 @@
             // 
             // tbTax
             // 
+            this.tbTax.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.tbTax.Location = new System.Drawing.Point(101, 14);
             this.tbTax.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTax.Multiline = true;
@@ -705,7 +709,7 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(123, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
